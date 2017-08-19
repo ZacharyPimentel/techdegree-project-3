@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>The Code Review</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	</head>
+	<body>
+		<!-- header, up to the double lines -->
+		<header>
+			<h1>THE CODE REVIEW</h1>
+			<h2>Signup for our newsletter</h2>
+			<p>Get the latest news on how your code is doing right in your inbox</p>
+		</header>
+		<!-- end of header -->
+
+		<!-- main, includes both form sections (contact info, newsletter) -->
+		<main>
+			<form action="index.html" method="post">
+				<!-- first form section, contact info -->
+				<fieldset class="contact_info">
+					<legend>Contact Information</legend>
+
+					<!-- name field -->
+					<label for="name">Full Name</label>
+					<input type="text" id="name" name="user_name" placeholder="Required" required>
+					<!-- email field -->
+					<label for="mail">Email Address</label>
+					<input type="email" id="mail" name="user_email" placeholder="Required" required>
+					<!-- phone number field -->
+					<label for="phone">Phone Number</label>
+					<input type="tel" id="phone" name="user_phone" placeholder="Not Required">
+					<!-- address field -->
+					<label for="address">Street Address</label>
+					<input type="text" id="address" name="user_address" placeholder="Not Required">
+					<!-- city field -->
+					<label for="city">City</label>
+					<input type="text" id="city" name="user_city" placeholder="Not Required">
+					<!-- state field -->
+					<label for="state">State</label>
+					<select id="state" name="user_state">
+						<option value="choose_state">Choose State</option>
+						<option value="georgia">Georgia</option>
+						<option value="utah">Utah</option>
+						<option value="washington">Washington</option>
+						<option value="arizona">Arizona</option>
+					</select>	
+					<!-- zip/postal code field -->
+					<label for="zip">Zip Code</label>
+					<input type="text" id="zip" name="user_zip" placeholder="Not Required">		
+				</fieldset>
+				<!-- end of contact info section -->
+
+				<!-- second form section, newsletter -->
+				<fieldset class="newsletter_info">
+					<legend>Newsletter</legend>
+
+					<p>Select the newsletters you would like to receive</p>
+
+					<!-- checkboxes -->
+					<input type="checkbox" id="html-newsletter" value="news_html" name="user_news">
+					<label for="html-newsletter">HTML News</label><br>
+
+					<input type="checkbox" id="css-newsletter" value="news_css" name="user_news">
+					<label for="css-newsletter">CSS News</label><br>
+
+					<input type="checkbox" id="javascript-newsletter" value="news_javascript" name="user_news">
+					<label for="javascript-newsletter">Javascript News</label>
+					<!-- end of checkboxes -->
+
+					<p>Newsletter format</p>
+
+					<!-- radio buttons -->
+					<input type="radio" id="html-format" value="format_html" name="user_format">
+					<label for="html-format">HTML</label><br>
+
+					<input type="radio" id="plaintext-format" value="format_plaintext" name="user_format">
+					<label for="plaintext-format">Plain text</label><br>
+					<!-- end of radio buttons -->
+
+					<p>Other topics you'd like to hear about</p>
+
+					<!-- feedback textarea -->
+					<textarea id="feedback" name="user_feedback" placeholder="Not Required"></textarea>
+
+				</fieldset>	
+				<!-- end of second form section -->
+
+				<!-- submit button -->
+				<button type="submit">Sign Up</button>
+
+			</form>
+		</main>
+		<!-- end of main -->
+
+		<footer>
+			<p>Copyright The Code Review</p>
+		</footer>
+	</body>
+</html>
